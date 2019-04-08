@@ -33,9 +33,9 @@ return [
     // 标签库标签结束标记
     'taglib_end'   => '}',
     // 开启全局模版布局
-//    'layout_on'    => false,
-    //全局模版布置文件名
-//    'layout_name'  => 'layout',
+    'layout_on'    => false,
+//    全局模版布置文件名
+    'layout_name'  => 'layout',
     // 自定义的占位符
 //    'layout_item'  => '{__TEXT__}'
 

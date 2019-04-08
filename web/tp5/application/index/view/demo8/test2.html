@@ -1,4 +1,53 @@
 
-{include file="public/header1"}
-<h2>我是iOS程序员 范文哲</h2>
-{include file="public/footer1"}
+{extend name="public/base" /}
+<!--模版继承
+1.拿到一个模版进行拆分
+2.创建基础模版
+3。模版继承
+4。基础模版有的子模版一定有而且必有
+5。可以继承，可以重写，可以不继承
+
+
+-->
+{block name="body"}
+<!-- 继承-->
+{__block__}
+<!-- 重写-->
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+<h2>我是iOS程序员</h2>
+
+
+{/block}
+<!--不继承 -->
+{block name="nav"}asd{/block}
