@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$title|default='默认主题'}</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h2 class="text-center">网站汇总</h2>
+            <table class="table table-hover table-bordered table-default text-center">
+                <tr class="bg-primary">
+                    <td>编号</td>
+                    <td>名称</td>
+                    <td>网址</td>
+                    <td>管辖</td>
+                    <td>国家</td>
+                </tr>
+               <!--{volist name="data" id="list"}-->
+                <!--<tr>-->
+                    <!--<td>编号</td>-->
+                    <!--<td>名称</td>-->
+                    <!--<td>网址</td>-->
+                    <!--<td>管辖</td>-->
+                    <!--<td>国家</td>-->
+                <!--</tr>-->
+                <!--{/volist}-->
+                {foreach  name="data" id="list"}
+                <tr>
+                    <td>{$list.id}</td>
+                    <td>{$list.name}</td>
+                    <td>{$list.url}</td>
+                    <td>{$list.alexa}</td>
+                    <td>{$list.country}</td>
+                </tr>
+                {/foreach}
+
+            </table>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="clo-md-2"></div>-->
+        <!--<div class="clo-md-8">-->
+            <!--<h2> 网站汇总 </h2>-->
+            <!--<table class="table table-hover table-bordered table-default text-center">-->
+                <!--<tr class="bg-primary">-->
+                    <!--<td>编号</td>-->
+                    <!--<td>名称</td>-->
+                    <!--<td>网址</td>-->
+                    <!--<td>亚历克斯</td>-->
+                    <!--<td>国家</td>-->
+                <!--</tr>-->
+                <!--<volist name="data" id="list">-->
+                <!--<tr>-->
+                    <!--<td>{$list.id}</td>-->
+                    <!--<td>{$list.name}</td>-->
+                    <!--<td>{$list.url}</td>-->
+                    <!--<td>{$list.alexa}</td>-->
+                    <!--<td>{$list.country}</td>-->
+                <!--</tr>-->
+                <!--<volist>-->
+            <!--</table>-->
+        <!--</div>-->
+        <!--<div class="clo-md-2"></div>-->
+    <!--</div>-->
+<!--</div>-->
+
+</body>
+</html>
